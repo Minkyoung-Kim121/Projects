@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021년을 기대하며</title>
+
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5_kQXfi8nXUvEU660GfnFV4KK3AMmNMoiw&usqp=CAU">
+
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0BcGXca695nTtxS216me5J_MXcD08n81oGw&usqp=CAU">
+    <meta property="og:title" content="민경이의 카드">
+    <meta property="og:description" content="2020을 추억하며">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: ivory;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: whitesmoke;
+            width: 150px;
+            height: 150px;
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif);
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 5px solid whitesmoke;
+
+            box-shadow: 0px 0px 10px 0px whitesmoke;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 500px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px whitesmoke;
+        }
+
+        .from {
+            text-align: right;
+            margin: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                height: 500px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envolope {
+                margin: 150px auto 0px auto;
+            }
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan(){
+            alert("앗! 어떻게 찾았지");
+            window.location.href="https://www.naver.com";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2020년 고생 많았지0-0</h1>
+        <div class="messagebox">
+            만두에게. <br />
+            올해 다사다난했지만 <br />
+            칠리랑 싸우지 말고 <br />
+            잘 지냈지? <br />
+            캣타워도 두 개니까 <br />
+            사이좋게 지내! <br />
+            <p class="from">2020.12.25 민경이가</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
